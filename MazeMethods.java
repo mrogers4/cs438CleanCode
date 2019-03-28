@@ -6,7 +6,6 @@
  * @version (a version number or a date)
  */
 public interface MazeMethods {
-    //prints the maze grid
     public void printMaze();
 	
     //attempts to recursively traverse the maze

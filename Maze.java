@@ -42,12 +42,12 @@ public class Maze implements MazeMethods
    public boolean solveTheMaze(int row, int column)
    {
        boolean bReturn = false;
-       //boolean bSuccess = false;
+       
        
        if(isAValidPoint(row, column))
        {
            theGrid [row][column] = 3;
-           //System.out.println("At location: " + row + ", " + column);
+           
            //Are we at the end of the maze?
            if(row == MAX_ROW && column == MAX_COLUMN)
            {

@@ -7,13 +7,11 @@
  */
 public class MazeSearch
 {
-    //  Creates a new maze, prints its original form, attempts
-    //  to solve it, and prints out its final form.
+
     public static void main (String[] args) {
        Maze maze = new Maze();
        
-       //Part of the recursion example in the Maze class
-       //maze.recursionTest(1);
+
        
        System.out.println("Maze input data");
        maze.printMaze();

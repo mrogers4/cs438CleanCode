@@ -8,9 +8,8 @@
 public interface MazeMethods {
     public void printMaze();
 	
-    //attempts to recursively traverse the maze
+
     public boolean solveTheMaze(int row, int column);
 	
-    //determines if a specific location is valid
     public boolean isAValidPoint(int row, int column);
 }

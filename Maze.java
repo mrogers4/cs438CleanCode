@@ -26,12 +26,9 @@ public class Maze implements MazeMethods
    private int theRow = 0;
    private int theColumn = 0;
     
-    public void printMaze()
-   {
-       for (int r = MIN_ROW; r <= MAX_ROW; r++)
-       {
-           for (int c = MIN_COLUMN; c <= MAX_COLUMN; c++)
-           {
+    public void printMaze() {
+       for (int r = MIN_ROW; r <= MAX_ROW; r++) {
+           for (int c = MIN_COLUMN; c <= MAX_COLUMN; c++) {
                System.out.print(theGrid[r][c]);
            }
            System.out.println();

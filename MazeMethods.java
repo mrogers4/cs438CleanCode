@@ -11,8 +11,8 @@ public interface MazeMethods
     public void printMaze();
 	
     //attempts to recursively traverse the maze
-    public boolean solve(int row, int column);
+    public boolean solveTheMaze(int row, int column);
 	
     //determines if a specific location is valid
-    public boolean valid(int row, int column);
+    public boolean isValid(int row, int column);
 }

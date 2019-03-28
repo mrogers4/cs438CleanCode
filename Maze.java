@@ -39,12 +39,12 @@ public class Maze implements MazeMethods
    }
    
   
-   public boolean solve(int row, int column)
+   public boolean solveTheMaze(int row, int column)
    {
        boolean bReturn = false;
        //boolean bSuccess = false;
        
-       if(valid(row, column))
+       if(isAValidPoint(row, column))
        {
            theGrid [row][column] = 3;
            //System.out.println("At location: " + row + ", " + column);
@@ -56,25 +56,25 @@ public class Maze implements MazeMethods
            }
            
            //Try Left
-           else if (solve(row - 1, column))
+           else if (solveTheMaze(row - 1, column))
            {
                theGrid [row][column] = 7;
                bReturn = true;
            }
            //Try Right
-           else if (solve(row + 1, column))
+           else if (solveTheMaze(row + 1, column))
            {
                theGrid [row][column] = 7;
                bReturn = true;
            }
            //Try Up
-           else if (solve(row, column - 1))
+           else if (solveTheMaze(row, column - 1))
            {
                theGrid [row][column] = 7;
                bReturn = true;
            }
            //Try Down
-           else if (solve(row, column + 1))
+           else if (solveTheMaze(row, column + 1))
            {
                theGrid [row][column] = 7;
                bReturn = true;
@@ -93,7 +93,7 @@ public class Maze implements MazeMethods
    }
    
    //Making sure the point that is being passed in is in bounds and has a one in it
-   public boolean valid(int row, int column)
+   public boolean isAValidPoint(int row, int column)
    {
        boolean bIsWithinBounds = false;
        boolean bIsValidStep = false;

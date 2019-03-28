@@ -19,12 +19,12 @@ public class MazeSearch
        maze.printMaze();
        System.out.println();
        System.out.println("Testing to make sure the valid function works");
-       testValid(); //Calls the test function  tests all the possibilities
+       testValid();
        
        System.out.println();
        System.out.println("Now testing if maze is solved or not");
        //Assumes that (0,0) is a valid point to start at 
-       if (maze.solve(0, 0))
+       if (maze.solveTheMaze(0, 0))
           System.out.println ("Maze solved!");
           
        else
@@ -36,7 +36,7 @@ public class MazeSearch
     {
        Maze maze = new Maze();
         
-        if (maze.valid(5, 5))
+        if (maze.isAValidPoint(5, 5))
        {
            System.out.println("Point (5, 5) is valid");
        }
@@ -45,7 +45,7 @@ public class MazeSearch
            System.out.println("Point (5, 5) is invalid");
        }
        //The row was too small
-       if (maze.valid(-1, 5))
+       if (maze.isAValidPoint(-1, 5))
        {
            System.out.println("Point (-1, 5) is valid");
        }
@@ -54,7 +54,7 @@ public class MazeSearch
            System.out.println("Point (-1, 5) is invalid");
        }
        //T  He column was too big
-       if (maze.valid(5, 15))
+       if (maze.isAValidPoint(5, 15))
        {
            System.out.println("Point (5, 15) is valid");
        }
@@ -63,7 +63,7 @@ public class MazeSearch
            System.out.println("Point (5, 15) is invalid");
        }
        //THe row was too big
-       if (maze.valid(15, 5))
+       if (maze.isAValidPoint(15, 5))
        {
            System.out.println("Point (15, 5) is valid");
        }
@@ -72,7 +72,7 @@ public class MazeSearch
            System.out.println("Point (15, 5) is invalid");
        }
        //THe column was too small
-       if (maze.valid(5, -5))
+       if (maze.isAValidPoint(5, -5))
        {
            System.out.println("Point (5, -5) is valid");
        }

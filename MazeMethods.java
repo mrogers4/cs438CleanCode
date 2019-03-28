@@ -13,5 +13,5 @@ public interface MazeMethods {
     public boolean solveTheMaze(int row, int column);
 	
     //determines if a specific location is valid
-    public boolean isValid(int row, int column);
+    public boolean isAValidPoint(int row, int column);
 }

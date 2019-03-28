@@ -38,10 +38,7 @@ public class Maze implements MazeMethods
        }
    }
    
-   //Solve calls itself to move through the maze following the valid path 
-   //which is represented by ones 
-   //False is returned when a zero is found 
-   //True is returned when the cell maxrow & maxcolumn is reached
+  
    public boolean solve(int row, int column)
    {
        boolean bReturn = false;

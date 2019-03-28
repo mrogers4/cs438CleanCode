@@ -19,7 +19,7 @@ public class MazeSearch
        maze.printMaze();
        System.out.println();
        System.out.println("Testing to make sure the valid function works");
-       testValid();
+       testValidPoints();
        
        System.out.println();
        System.out.println("Now testing if maze is solved or not");
@@ -32,7 +32,7 @@ public class MazeSearch
           
        maze.printMaze();
     } 
-    public static void testValid()
+    public static void testValidPoints()
     {
        Maze maze = new Maze();
         

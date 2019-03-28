@@ -17,13 +17,13 @@ public class Maze implements MazeMethods
                       {1,0,0,0,0,0,0,0,0,0,0,0,0},
                       {1,1,1,1,1,1,1,1,1,1,1,1,1}};
    
-   public static final int MAX_NUMBER_OF_ROWS   = 8;
+   public static final int MAX_NUMBER_OF_ROWS = 8;
    public static final int MAX_NUMBER_OF_COLUMNS = 13;
-   public static final int MIN_ROW    = 0;
-   public static final int MAX_ROW    = MAX_NUMBER_OF_ROWS - 1;
+   public static final int MIN_ROW = 0;
+   public static final int MAX_ROW = MAX_NUMBER_OF_ROWS - 1;
    public static final int MIN_COLUMN = 0;
    public static final int MAX_COLUMN = MAX_NUMBER_OF_COLUMNS - 1;
-   private int theRow    = 0;
+   private int theRow = 0;
    private int theColumn = 0;
     
     public void printMaze()

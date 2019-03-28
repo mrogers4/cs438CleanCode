@@ -5,8 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public interface MazeMethods
-{
+public interface MazeMethods {
     //prints the maze grid
     public void printMaze();
 	
